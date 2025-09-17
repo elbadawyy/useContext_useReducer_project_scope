@@ -1,122 +1,108 @@
-# 🚀 React HTTP Request Practice Projects Scope
+# ⚛️ React useContext + useReducer Practice Projects  
+
+A collection of **10 small React projects** that demonstrate how to combine **useContext** and **useReducer** for global state management.  
+These projects are lightweight but cover real-world use cases like authentication, todo management, theming, and more.  
 
 ---
 
-# 📂 HTTP Request Projects Roadmap
+## 📂 Projects Included  
 
-<pre><code>
-react-http-scopes/
-│
-├── README.md   # main roadmap
-│
-├── basic/
-│   ├── 01-todo-list.md
-│   ├── 02-contact-manager.md
-│   └── 03-currency-converter.md
-│
-├── medium/
-│   ├── 04-notes-app-jsonserver.md
-│   ├── 05-book-library.md
-│   ├── 06-ecommerce-product-list.md
-│   ├── 07-employee-management.md
-│   └── 08-ticketing-system.md
-│
-└── high/
-    ├── 09-inventory-dashboard.md
-    ├── 10-healthcare-appointments.md
-    ├── 11-learning-management.md
-    ├── 12-food-ordering-app.md
-    └── 13-blog-platform.md
-</pre></code>
-
-
-# 1. Todo List App (CRUD with Fake API)
-scope:
- - Use JSONPlaceholder API for todos.
- - Add (POST), Edit (PUT), Delete (DELETE), View (GET).
- - Focus: Practicing all HTTP methods in React.
-
-# 2. Contact Manager
-scope:
- - Manage contacts (name, phone, email).
- - Store and update using API.
- - Focus: Form handling + CRUD operations.
-
-# 3. Currency Converter
-scope:
- - Use ExchangeRate API.
- - Convert amount from one currency to another.
- - Focus: Query params, GET request handling.
-
-# 4. Notes App with JSON-Server
-scope:
- - Set up local json-server backend.
- - CRUD: Add, Edit, Delete, View Notes.
- - Focus: Local API + CRUD cycle.
-
-# 5. Book Library App
-scope:
- - Manage book collection (title, author, year).
- - CRUD with JSON-server.
- - Focus: Full-stack-like local DB management.
-
-# 6. E-commerce Product List (with Axios Instance)
-scope: 
- - Display product list.
- - Add Axios instance with interceptors to attach API key.
- - Focus: Centralized API management in real-world apps.
-
-# 7. Employee Management System
-scope: 
- - HR-style app to add, update, delete employees.
- - Features: Search/filter employees by role or department.
- - Focus: CRUD + search + API handling.
-
-# 8. Ticketing System (Customer Support)
-scope: 
- - Create support tickets (POST).
- - Update status (PUT).
- - Delete old tickets (DELETE).
- - Show list of active/resolved tickets.
- - Focus: Real-world workflow app with error handling.
-
-# 9. Inventory Management Dashboard
-scope: 
- - Manage stock items, update quantities, delete old inventory.
- - Show “Low stock” warnings.
- - Use Axios interceptors for auth tokens.
- - Focus: Industry-style dashboards.
-
-# 10. Healthcare Appointment System
-scope: 
- - Patients → book appointments.
- - Doctors → update/cancel appointments.
- - Error handling: prevent double-booking.
- - Focus: Healthcare SaaS-style application.
-
-# 11. Learning Management System (LMS)
-scope: 
- - Admin: Add/edit courses.
- - Students: Enroll in courses.
- - Auth with Supabase/Appwrite.
- - Focus: EdTech industry real-world app.
-
-# 12. Online Food Ordering Platform (Zomato/Swiggy Lite)
-scope: 
- - Browse restaurants/menus.
- - Add to cart, update quantity, remove items.
- - Axios interceptors for authentication.
- - Focus: E-commerce & FoodTech workflow.
-
-# 13. Blogging Platform (Final Capstone Project)
-scope: 
- - Signup/Login (Supabase or Appwrite).
- - CRUD for blog posts (title, content, tags, images).
- - Error handling for failed requests.
- - Axios instance for secure API calls.
- - Focus: Full production-style app combining all concepts.
+### 🔹 1. Theme Switcher (Light / Dark Mode) 
+# useReducer: Manage theme state (light, dark).
+# useContext: Provide theme state globally to all components.
+# Scope:
+ - Toggle between light & dark mode.  
+ - Save preference in `localStorage`.  
+ - Apply theme globally across components.  
 
 ---
+
+### 🔹 2. Todo App with Filters  
+# useReducer: Handle actions like ADD_TODO, TOGGLE_TODO, REMOVE_TODO, SET_FILTER.
+# useContext: Share todos and filter state with all components.
+# Scope:
+ - Add, remove, and toggle todos.  
+ - Filter: `All | Active | Completed`.  
+ - Global state shared across `TodoList`, `TodoItem`, and `Filter`.  
+
+---
+
+### 🔹 3. Shopping Cart 🛒  
+# useReducer: Actions for ADD_ITEM, REMOVE_ITEM, INCREASE_QTY, DECREASE_QTY.
+# useContext: Share cart state across ProductList, Cart, and Navbar.
+# Scope:
+ - Add/Remove products to cart.  
+ - Increase/Decrease quantity.  
+ - Show cart count in Navbar & calculate total price.  
+
+---
+
+### 🔹 4. Authentication System (Basic)
+# useReducer: Actions like LOGIN, LOGOUT, REGISTER.
+# useContext: Provide auth state globally.
+# Scope:
+ - Login, Logout, Register with global state.  
+ - Show logged-in user in Navbar.  
+ - Simple protected route handling.  
+
+---
+
+### 🔹 5. Notes App with Categories  
+# useReducer: Actions like ADD_NOTE, DELETE_NOTE, SET_CATEGORY.
+# useContext: Share notes + category across components.
+# Scope:
+ - Add notes with category (Work, Personal, etc.).  
+ - Filter notes by category.  
+ - Delete note functionality with persistence.  
+
+---
+
+### 🔹 6. Multi-Step Form (Wizard Form)  
+# useReducer: Actions like NEXT_STEP, PREVIOUS_STEP, UPDATE_FIELD.
+# useContext: Share form data & current step across all form components.
+# Scope:
+ - Multi-step form (Personal Info → Address → Review).  
+ - Navigate between steps.  
+ - Collect all data in global state before submission.  
+
+---
+
+### 🔹 7. Expense Tracker 💰  
+- Add expenses with amount & category.  
+- Show total spent & remaining balance.  
+- Filter by category and delete entries.  
+
+---
+
+### 🔹 8. Quiz App  
+- Answer multiple-choice questions.  
+- Track score globally.  
+- Show results at the end.  
+
+---
+
+### 🔹 9. Notification System 🔔  
+- Add notifications globally (success, error, info).  
+- Auto-dismiss after a few seconds.  
+- Display notifications anywhere in the app.  
+
+---
+
+### 🔹 10. Playlist Manager 🎵  
+- Add/remove songs from a playlist.  
+- Mark currently playing song.  
+- Simple player controls (Play/Pause).  
+
+---
+
+## 🛠️ Tech Stack  
+- **React.js** (with Hooks)  
+- **useContext** for global state sharing  
+- **useReducer** for action-based state management  
+- **Material UI / Tailwind CSS** *(for styling)*  
+
+---
+
 
 ## 🙋‍♂️ Author
 
