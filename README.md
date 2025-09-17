@@ -5,8 +5,6 @@ These projects are lightweight but cover real-world use cases like authenticatio
 
 ---
 
-## 📂 Projects Included  
-
 ### 🔹 1. Theme Switcher (Light / Dark Mode) 
 **useReducer: Manage theme state (light, dark).**
 
