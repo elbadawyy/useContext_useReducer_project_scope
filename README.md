@@ -9,6 +9,7 @@ These projects are lightweight but cover real-world use cases like authenticatio
 
 ### 🔹 1. Theme Switcher (Light / Dark Mode) 
 **useReducer: Manage theme state (light, dark).**
+
 **useContext: Provide theme state globally to all components.**
 **Scope:**
  - Toggle between light & dark mode.  
